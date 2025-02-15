@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f00404;
+        }
+        .banner {
+            background-color:rgb(4, 0, 255); /* Blue background */
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        .banner h1 {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .banner h2 {
+            font-size: 44px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .banner p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .banner::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 30px;
+            background: white;
+            transform: skewY(-3deg);
+            transform-origin: left;
+        }
+    </style>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        h1 {
+            color: #333333;
+        }
+        .section {
+            text-align: left;
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            margin-top: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+        text-align: center; /* Centers everything inside the div */
+        margin-top: 20px;
+    }
+
+    .centered-heading {
+        text-align: center; /* Ensures the heading is centered */
+        margin-bottom: 10px; /* Adds spacing between heading and image */
+    }
+    footer {
+        background-color: #000000; /* Dark background */
+        color: white;
+        text-align: center;
+        padding: 15px;
+        font-size: 16px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+
+        <div class="banner">
+            <h1>Exchange Rate Analysis: USD to INR</h1>
+            <p>Unraveling India's Currency Exchange Patterns with Data</p>
+        </div>
+
+    <h2>1. The Curiosity Behind Exchange Rate Fluctuations</h2>
+        <div class="section">
+            
+            <p>As someone passionate about data, I frequently analyze patterns in economic indicators. Exchange rates play a crucial role in global trade, investment, and economic stability, but how have they evolved over time? Examining historical shifts in the USD to INR exchange rate can provide valuable insights into India’s economic development, inflation trends, and policy decisions.
+
+                To explore this, I conducted an analysis of the yearly exchange rate of INR against the USD from 1947 to 2024 using historical data.                
+            </p>
+        </div>
+
+        <h2>2. Gathering the Historical Exchange Rate Data</h2>
+        <div class="section">
+            
+            <p>To perform this analysis, I needed accurate and comprehensive data. Here’s how I collected the exchange rate data:
+
+            <p><b>📌 Sources Used:</b></p>
+                
+                <li>(Reserve Bank of India) historical reports</li>
+                <li>(International Monetary Fund) exchange rate archives</li>
+                <li>World Bank and FRED (Federal Reserve Economic Data) for cross-verification</li>
+                <li>Financial websites like Trading Economics and Investing.com</li>
+
+                <p>📅 Time Period: 1947 to 2024 (Yearly exchange rate data)</p>
+                <p><b>
+                🔗 Data Format:
+                </b></p>
+            <li>Yearly exchange rate values (INR per USD)</li>
+            <li>Metadata such as inflation rates, GDP growth, and major economic events (for correlation)</li>                
+            </p>
+        </div>
+        <h2>3. Preparing the Dataset</h2>
+            <div class="section">
+
+        <p>Once I gathered the data, the next step was cleaning and preprocessing to ensure consistency and accuracy.</p>
+
+<p>🔍 <b>Handling Missing Data:</b></p>
+
+<li>Some years had missing exchange rates, so I used linear interpolation for approximation.</li>
+<li>Cross-referenced missing values with multiple sources to minimize errors.</li>
+
+<p>📏 <b>Standardization & Formatting:</b></p>
+
+<li>Converted all rates to a consistent format (rounded to two decimal places).</li>
+<li>Removed duplicate records and inconsistencies.</li>
+<p>🔄 <b>Handling Outliers:</b></p>
+
+<li> spikes in exchange rates (due to events like the 1991 Economic Crisis) were validated against historical events.</li>
+</div>
+
+<h2>4. Unveiling Trends and Patterns</h2>
+<div class = "section">
+<p>Once the data was clean, I started exploring the trends in exchange rates.</p>
+<p>I have created many plots to examine the data set.</p>
+
+
+<div class="image-container">
+    <h2 class="centered-heading">Line Chart</h2>
+    <img src="Lineplot.png" alt="Exchange Rate Graph"> 
+</div>
+
+
+<div class="image-container">
+    <h2>Bar Chart</h2>
+    <img src="BarChart.png" alt="Exchange Rate Graph">
+</div>
+
+<div class="image-container">
+    <h2>Scatter Plot</h2>
+    <img src="ScatterPlot.png" alt="Exchange Rate Graph">
+</div>
+</div>
+
+<h2>5. Observations</h2>
+<div class = "section">
+<h4>How Has the Exchange Rate Changed Over Time?</h4>
+
+<p>To get a clear understanding, I divided the exchange rate timeline into key economic phases:</p>
+
+<p>📌 1947 - 1970: Fixed Exchange Rate Era</p>
+
+<li>The INR was pegged to the British Pound until 1966 and later to the USD.</li>
+<li>Exchange rate remained relatively stable (~₹4.8 per USD).</li>
+
+<p>📌 1970 - 1991: Gradual Devaluation</p>
+
+<li>INR depreciated gradually as India transitioned from a controlled economy.</li>
+<li>By 1991, the exchange rate hit ₹17.90 per USD, leading to economic reforms.</li>
+
+<p>📌 1991 - 2000: Liberalization & Market-Driven Exchange Rate</p>
+
+<li> moved to a market-determined exchange rate post Economic Reforms.</li>
+<li>Sharp depreciation, reaching ₹45 per USD by 2000.</li>
+
+<p>📌 2000 - 2024: Volatility & Globalization</p>
+
+<li>The INR fluctuated due to global financial crises, inflation, and trade policies.</li>
+<li>By 2024, the exchange rate hovered around ₹83.5 per USD.</li>
+        </div>
+
+<h2>6. Analyzing the Factors Influencing Exchange Rate</h2>
+<div class = "section">
+        <p>Once I understood the data patterns, I explored statistical and predictive models.</p>
+
+<p><b>Key Factors Influencing Exchange Rates</b></p>
+<p>
+    📈 <b>Inflation Rate</b> – Higher inflation weakens the INR.
+</p>
+<p>
+📊 <b>Interest Rates</b> – Higher interest rates attract foreign investments, strengthening the INR.
+</p>
+<p>
+🌎 <b>Trade Balance</b> – Trade deficits lead to depreciation.
+</p>
+<p>
+💰 <b>Foreign Reserves & FDI</b> – Higher reserves stabilize the INR.
+</p>
+<p><b>Statistical & Predictive Modeling Approaches</b></p>
+<p>
+🔹 <b>Time Series Analysis (ARIMA Model)</b> – To predict future exchange rate trends.
+</p>
+<p>
+🔹 <b>Linear Regression</b> – To correlate economic indicators with exchange rate movement.
+</p>
+</div>
+<h2>7. Key Observations & Takeaways</h2>
+<div class = "section">
+    
+    <p>
+    🔹 Exchange rates have steadily depreciated over time, influenced by economic policies and global factors.</p>
+    <p>🔹 Major devaluations occurred during economic crises (1991, 2008).</p>
+<p>🔹 Post-1991 reforms, market forces played a dominant role in INR valuation.</p>
+<p>   🔹 High inflation and trade deficits have consistently contributed to INR depreciation.</p>
+    
+    📌 Final Thoughts: Understanding these trends helps in making informed financial decisions, investment strategies, and economic policy assessments.
+</p>
+</div>
+<h2>8. What’s Next?</h2>
+<div class = "section">
+    
+<p>📊 Exploring real-time exchange rate predictions using AI models</p>
+    <p>📉 Comparing INR with other major currencies (Euro, GBP, Yuan)</p>
+        <p>🔎 Studying the impact of global events on INR valuation</p>
+</p>
+</div>
+
+
+    </div>
+    <footer>
+        <p>Made by <strong>Sidhesh Kumar Patra</strong></p>
+    </footer>
+</body>
+</html>
